@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for post in posts %}
+<div class="post">
+    <div class="date">
+        {{ post.fecha_creacion }}
+      </div>
+      <h1><a href="">{{ post.titulo }}</a></h1>
+      <p>{{ post.texto }}</p>
+      </div>
+      <hr>
+        {% endfor %}
+{% endblock %}
